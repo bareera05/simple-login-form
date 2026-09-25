@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: #f2f2f2; */
+            background-image: linear-gradient( to right,rgba(4,9,30, 0.7),rgba(4,9,30,0.7)),url(banner.png);
+            background-size: cover;
+        }
+        .login-box{
+            width:350px;
+            padding:30px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-shadow: 0 0 25px 5px rgba(0,0,0,0.15); 
+            }
+            .login-box h2{
+                text-align:center ;
+                margin-bottom: 25px;
+                color:#333;
+            }
+            .login-box h4{
+                margin-bottom: 5px;
+                color:#555;
+            }
+            input{
+                display: block;
+                width:100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            .password{
+                margin-bottom: 5px;
+            }
+            .Forgot{
+                display: block;
+                text-align: left;
+                text-decoration: none;
+                font-size: 14px;
+                color:#007bff;
+                margin-bottom: 20px;
+            }
+            button{
+                width:100%;
+                padding:10px;
+                background: #24A0ED;
+                border-radius: 5px;
+                color:#f2f2f2;
+                font-size: 16px;
+                cursor: pointer;
+                border: none;
+                margin-bottom: 20px;
+            }
+            .sign-up{
+                text-align: center;
+                font-size: 16px;
+            }
+            .sign-up a{
+                text-decoration: none;
+                color:#007bff;
+            }
+           
+
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login Form</h2>
+
+        <form action="#">
+
+            <h4>Email</h4>
+            <input type="email" placeholder="Enter Email" class="email">
+
+            <h4>Password</h4>
+            <input type="password" placeholder="Enter password" class="password">
+
+            <a href="#" class="Forgot">Forgot Password?</a>
+
+            <button class="login" type="submit">Login</button>
+
+            <p class="sign-up">Not a member?<a href="#"> Signup now</a></p>
+
+        </form>
+    </div>
+</body>
+</html>
